@@ -1,0 +1,57 @@
+body {
+    background: url("../img/spongebobbackground.jpg") no-repeat center center / cover;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+h1 {
+    color:#fff;
+    text-shadow:1px 3px 8px #000;
+}
+/*HELPER STYLES*/
+.text_center {
+    text-align: center;
+}
+.poop {
+    font-size:2em;
+    text-shadow:1px 3px 8px #000;
+}
+#poop {
+    text-align: center;
+    color:#fff;
+}
+button {
+    background:yellow;
+    padding:.5em 1em;
+    border-radius:.5em;
+    margin-bottom:.5em;
+    font-size:.7em;
+}
+/*LAYOUT*/
+.site_width {
+    max-width: 60rem;
+    margin:0 auto;
+}
+.cols {
+    width:100%;
+}
+.col_half {
+    width: 44%;
+    margin: 1em;
+    float:left;
+    background: rgba(255,255,255,0.5);
+    border: .5em solid gold;
+    /* padding: 1em; */
+}
+.heatupthegrill {
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/*MEDIA QUERIES*/
+/* @media screen and (min-width: 767px) {
+    .cols {
+        clear:both;
+    }
+} */

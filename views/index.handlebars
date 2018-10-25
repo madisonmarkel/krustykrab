@@ -1,0 +1,51 @@
+<h1 class="text_center">The Krusty Krab</h1>
+<h2 id="poop"><span class="poop">P</span>eople <span class="poop">O</span>rder <span class="poop">O</span>ur <span class="poop">P</span>atties</h2>
+
+<div class="site_width">
+  <div class="cols">
+    <div class="col_half">
+      <h2 class="text_center">Order Your Krabby Patty</h2>
+
+      <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devoured=true}}
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col_half">
+      <h2 class="text_center">Order UP!</h2>
+
+      <ul>
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block devoured=false}}
+          {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<div class="site_width">
+  <div class="heatupthegrill">
+      <h2>Ask Mr. Krabs to add a new burger to the menu:</h2>
+      <form class="create-form">
+
+        <div class="form-group">
+          <label for="ca">Burger Name:</label>
+          <input type="text" id="ca" name="name">
+        </div>
+
+        <div class="form-group">
+          <label for="devoured">Eaten?</label><br>
+          <input type="radio" name="devoured" value="1" checked> Devoured<br>
+          <input type="radio" name="devoured" value="0"> Not yet eaten
+        </div>
+
+        <button type="submit">Add Burger</button>
+      </div>
+</div>
+</form>
