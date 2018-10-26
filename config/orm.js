@@ -87,8 +87,6 @@ var orm = {
         console.log("SET: " + objToSql(objColVals))
         console.log("OBJECT COL VALUES: " + objColVals)
 
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // NOT CONVERTING OUT OF OBJECT ?? WHY?????
         queryString += " SET ";
         //queryString += "devoured=false";
         queryString += objToSql(objColVals);
